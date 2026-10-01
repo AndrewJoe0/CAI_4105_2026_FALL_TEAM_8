@@ -1,0 +1,12 @@
+name: c1_rental
+channels:
+  - defaults
+dependencies:
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - python=3.11
+  - scikit-learn
+  - seaborn
+prefix: /opt/anaconda3/envs/c1_rental
