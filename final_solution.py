@@ -1,5 +1,5 @@
 
-# CAP 4105 - Team 8 - Challenge 1
+# CAI 4105 - Team 8 - Challenge 1
 # Complete rental price prediction workflow
 
 import os
