@@ -9,4 +9,3 @@ dependencies:
   - python=3.11
   - scikit-learn
   - seaborn
-prefix: /opt/anaconda3/envs/c1_rental

@@ -1,4 +1,4 @@
-# CAP 4105 - Machine Learning Challenge 1
+# CAI 4105 - Machine Learning Challenge 1
 ## Team 8 - Apartment Rental Price Prediction
 
 ### Project Objective
