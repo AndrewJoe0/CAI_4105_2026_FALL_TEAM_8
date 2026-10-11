@@ -91,8 +91,63 @@ The results are exported to:
 The final model is selected based on the lowest
 validation RMSE among evaluated candidates.
 
-The selected model and its measured RMSE are printed
-when the final notebook is executed.
+
+### Results
+
+Validation RMSE is in dollars (lower is better). The gap is
+validation RMSE minus training RMSE and is used to judge
+overfitting. All models use the same shared train/validation split.
+
+| Model                   | Training RMSE | Validation RMSE | Gap    |
+|-------------------------|--------------:|----------------:|-------:|
+| Random Forest           |        159.57 |          453.32 | 293.74 |
+| Tuned Random Forest     |        268.70 |          453.49 | 184.79 |
+| Tuned Gradient Boosting |        368.24 |          455.61 |  87.37 |
+| Gradient Boosting       |        405.21 |          487.96 |  82.75 |
+| Linear Regression       |        515.14 |          550.04 |  34.90 |
+| Decision Tree           |         39.35 |          559.31 | 519.96 |
+
+The same table is saved in `model_comparison.csv`.
+
+**What the results show**
+
+- The Decision Tree overfits severely: it nearly memorizes the
+  training data (RMSE 39) but has the worst validation RMSE (559).
+- Linear Regression has a small gap but a high error on both
+  sets, which suggests it underfits. A straight-line model cannot
+  capture how price depends on location and size.
+- Tuning helped Gradient Boosting (488 to 456) and reduced the
+  Random Forest gap (294 to 185), but did not lower its
+  validation RMSE.
+
+### Final Model
+
+**Selected model: Random Forest** (100 trees, default settings,
+`random_state=42`), with a **validation RMSE of about $453.32**.
+
+Justification:
+
+- **Validation performance:** it has the lowest validation RMSE of
+  all six candidates. Random Forest, Tuned Random Forest and
+  Tuned Gradient Boosting are within about $2.30 (0.5%) of each
+  other, so the difference between them is small. All three are
+  far better than Linear Regression and the Decision Tree.
+- **Overfitting:** its train/validation gap (about $294) is larger
+  than the Gradient Boosting gap (about $87). Averaging many trees
+  reduces variance, and tuning with a smaller gap did not improve
+  validation RMSE, so the extra complexity was not needed.
+  Tuned Gradient Boosting is the closest alternative and may
+  generalize similarly.
+- **Complexity and computation:** Random Forest trains quickly
+  because its trees can be built in parallel, and it is not very
+  sensitive to hyperparameters. Gradient Boosting trains trees one
+  after another and is more sensitive to its settings.
+- **Interpretability:** it is less interpretable than Linear
+  Regression or a single Decision Tree, but feature importances
+  are available.
+
+The final model is retrained on all 7,398 labeled observations
+before predicting the test set.
 
 ### Final Predictions
 
@@ -119,8 +174,9 @@ The final notebook is:
 
 `final_challenge.ipynb`
 
-The notebook runs the complete modeling workflow
-through `final_solution.py`.
+The notebook shows the complete modeling workflow, from
+loading the data to generating predictions. It is generated
+from `final_solution.py` by `make_final_notebook.py`.
 
 To reproduce locally:
 
