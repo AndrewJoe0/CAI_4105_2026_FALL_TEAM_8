@@ -1,0 +1,46 @@
+{
+  "model": "Naive Bayes",
+  "preprocessing": "scaled",
+  "best_params": {
+    "priors": [
+      0.7,
+      0.3
+    ],
+    "var_smoothing": 3
+  },
+  "n_grid_combinations": 27,
+  "baseline": {
+    "f1_mean": 0.464003626190128,
+    "precision_mean": 0.3144820346414644,
+    "recall_mean": 0.8853804731853513,
+    "roc_auc_mean": 0.8559181359475454,
+    "avg_precision_mean": 0.5009206672897315,
+    "train_f1_mean": 0.4706916021977395,
+    "f1_std": 0.012101473211200375,
+    "precision_std": 0.010312060823996654,
+    "recall_std": 0.023186482982403025,
+    "roc_auc_std": 0.009073990687489262,
+    "avg_precision_std": 0.006965397277443153,
+    "train_f1_std": 0.006366606848604563,
+    "best_threshold": 0.999978202915907,
+    "f1_at_best_threshold_oof": 0.5753339546442995
+  },
+  "tuned": {
+    "f1_mean": 0.6238499014778819,
+    "precision_mean": 0.5036474274983325,
+    "recall_mean": 0.8203820569674228,
+    "roc_auc_mean": 0.8763210135353731,
+    "avg_precision_mean": 0.5148194166447255,
+    "train_f1_mean": 0.6240309645174227,
+    "f1_std": 0.005541837863876632,
+    "precision_std": 0.011202736444049247,
+    "recall_std": 0.02396880257808339,
+    "roc_auc_std": 0.006159074948597433,
+    "avg_precision_std": 0.018073294319450144,
+    "train_f1_std": 0.004918621910736802,
+    "best_threshold": 0.5237107267432095,
+    "f1_at_best_threshold_oof": 0.6269303711731238
+  },
+  "note": "GaussianNB assumes bell-shaped, independent features; one-hot columns break that assumption.",
+  "seconds": 7.4
+}

@@ -1,0 +1,43 @@
+{
+  "model": "Logistic Regression",
+  "preprocessing": "scaled",
+  "best_params": {
+    "C": 0.003,
+    "class_weight": "balanced"
+  },
+  "n_grid_combinations": 16,
+  "baseline": {
+    "f1_mean": 0.6493908760821588,
+    "precision_mean": 0.6940167043364358,
+    "recall_mean": 0.610735605857557,
+    "roc_auc_mean": 0.9186478028366454,
+    "avg_precision_mean": 0.7056142068795989,
+    "train_f1_mean": 0.6621685793303094,
+    "f1_std": 0.01627064819039676,
+    "precision_std": 0.017072575330591692,
+    "recall_std": 0.0264338287125722,
+    "roc_auc_std": 0.007670681662882276,
+    "avg_precision_std": 0.007077977347774223,
+    "train_f1_std": 0.006472757769060282,
+    "best_threshold": 0.29297020660755835,
+    "f1_at_best_threshold_oof": 0.6846846846846847
+  },
+  "tuned": {
+    "f1_mean": 0.6721173666034763,
+    "precision_mean": 0.5712282944191777,
+    "recall_mean": 0.8168855534709193,
+    "roc_auc_mean": 0.917709184205294,
+    "avg_precision_mean": 0.6822495114712531,
+    "train_f1_mean": 0.6719881080505402,
+    "f1_std": 0.014746076468335602,
+    "precision_std": 0.018057933528460607,
+    "recall_std": 0.0212871482703169,
+    "roc_auc_std": 0.005846134404416741,
+    "avg_precision_std": 0.00397990977422558,
+    "train_f1_std": 0.0036566322353106893,
+    "best_threshold": 0.6984024377689808,
+    "f1_at_best_threshold_oof": 0.680786686838124
+  },
+  "note": "",
+  "seconds": 7.9
+}
