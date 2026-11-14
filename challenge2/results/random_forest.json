@@ -1,0 +1,45 @@
+{
+  "model": "Random Forest",
+  "preprocessing": "tree",
+  "best_params": {
+    "class_weight": "balanced_subsample",
+    "max_depth": null,
+    "min_samples_leaf": 5,
+    "n_estimators": 500
+  },
+  "n_grid_combinations": 54,
+  "baseline": {
+    "f1_mean": 0.6628773628159556,
+    "precision_mean": 0.7453711870194468,
+    "recall_mean": 0.5981555030335518,
+    "roc_auc_mean": 0.9269361011556541,
+    "avg_precision_mean": 0.7496977270326124,
+    "train_f1_mean": 0.999825174791779,
+    "f1_std": 0.019538233839754122,
+    "precision_std": 0.03418843630252335,
+    "recall_std": 0.03147227904381064,
+    "roc_auc_std": 0.005000252506674973,
+    "avg_precision_std": 0.0172703198521268,
+    "train_f1_std": 0.00023938931351550848,
+    "best_threshold": 0.36,
+    "f1_at_best_threshold_oof": 0.6946688206785138
+  },
+  "tuned": {
+    "f1_mean": 0.6905665626555477,
+    "precision_mean": 0.6158893645744524,
+    "recall_mean": 0.7868326795156063,
+    "roc_auc_mean": 0.9332072536896451,
+    "avg_precision_mean": 0.7542621859832384,
+    "train_f1_mean": 0.8043299070270031,
+    "f1_std": 0.009574107314117555,
+    "precision_std": 0.01616372880142148,
+    "recall_std": 0.026635513617907832,
+    "roc_auc_std": 0.005659030377510865,
+    "avg_precision_std": 0.017928919078432373,
+    "train_f1_std": 0.0038327893221909593,
+    "best_threshold": 0.5636408063672307,
+    "f1_at_best_threshold_oof": 0.7016181229773463
+  },
+  "note": "",
+  "seconds": 774.3
+}
