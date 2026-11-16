@@ -16,9 +16,9 @@ Deadline: **Nov 15**. Everyone also submits their own peer-review form.
 
 | Person | Models (script in `models/`) | Also owns |
 |---|---|---|
-| **Andres** | Logistic Regression, Naive Bayes (done) | `common.py` (shared code), `eda.py`, `environment.yml`, README draft, final notebook assembly |
+| **Andres** | Logistic Regression, Naive Bayes, Gradient Boosting | `common.py` (shared code), `eda.py`, `environment.yml`, README draft, final notebook assembly |
 | **Teammate 2** | K-Nearest Neighbors, Support Vector Machine | Compare distance/kernel based models; a short note on why SVM is slow and how we kept it manageable |
-| **Teammate 3** | Decision Tree, Random Forest, Gradient Boosting | Feature importance plot for the best tree model; try one extra model if time allows (e.g. HistGradientBoosting) |
+| **Teammate 3** | Decision Tree, Random Forest | Feature importance plot for the best tree model; compare how overfitting changes from a single tree to a forest |
 
 ### Steps for Teammates 2 and 3
 1. `git pull`, create the environment (`conda env create -f environment.yml`).
