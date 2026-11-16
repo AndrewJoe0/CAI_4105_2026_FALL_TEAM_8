@@ -1,3 +1,5 @@
+> **Challenge 2 (classification: predicting online shopping purchases) is in the [`challenge2/`](challenge2/) folder. Start with [`challenge2/README.md`](challenge2/README.md).** The sections below describe Challenge 1 (regression).
+
 # CAI 4105 - Machine Learning Challenge 1
 ## Team 8 - Apartment Rental Price Prediction
 

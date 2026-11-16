@@ -14,6 +14,8 @@ def comparison_table():
     rows = []
     for f in sorted(RESULTS_DIR.glob("*.json")):
         r = json.loads(f.read_text())
+        if "baseline" not in r:        # e.g. final_model_nested_cv.json is not a model result
+            continue
         b, t = r["baseline"], r["tuned"]
         rows.append({
             "Model": r["model"],

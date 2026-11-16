@@ -1,0 +1,45 @@
+{
+  "model": "Gradient Boosting",
+  "preprocessing": "tree",
+  "best_params": {
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "n_estimators": 200,
+    "subsample": 0.8
+  },
+  "n_grid_combinations": 48,
+  "baseline": {
+    "f1_mean": 0.6624799510028005,
+    "precision_mean": 0.7134483988540323,
+    "recall_mean": 0.6191296508369678,
+    "roc_auc_mean": 0.9322243704974993,
+    "avg_precision_mean": 0.7542124020049187,
+    "train_f1_mean": 0.7395680217693403,
+    "f1_std": 0.023784136892783324,
+    "precision_std": 0.027809153341309865,
+    "recall_std": 0.032192367575635567,
+    "roc_auc_std": 0.0042678140682145165,
+    "avg_precision_std": 0.012275152233627228,
+    "train_f1_std": 0.004334155254214161,
+    "best_threshold": 0.3259826689224016,
+    "f1_at_best_threshold_oof": 0.6917389906782385
+  },
+  "tuned": {
+    "f1_mean": 0.6691477600849799,
+    "precision_mean": 0.7209234860217466,
+    "recall_mean": 0.6253965546648473,
+    "roc_auc_mean": 0.9327632770573426,
+    "avg_precision_mean": 0.754832970303619,
+    "train_f1_mean": 0.7684343493727251,
+    "f1_std": 0.023147455252677557,
+    "precision_std": 0.015030321061998779,
+    "recall_std": 0.04006333922321616,
+    "roc_auc_std": 0.0037661343824850146,
+    "avg_precision_std": 0.013838193179693703,
+    "train_f1_std": 0.0035274554776675952,
+    "best_threshold": 0.3442681679493793,
+    "f1_at_best_threshold_oof": 0.696198347107438
+  },
+  "note": "No class_weight option in sklearn's GradientBoostingClassifier; the F1-optimal threshold handles the imbalance.",
+  "seconds": 1188.6
+}
