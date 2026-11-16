@@ -1,0 +1,43 @@
+{
+  "model": "K-Nearest Neighbors",
+  "preprocessing": "scaled",
+  "best_params": {
+    "n_neighbors": 31,
+    "weights": "uniform"
+  },
+  "n_grid_combinations": 10,
+  "baseline": {
+    "f1_mean": 0.6167546559698072,
+    "precision_mean": 0.6545681883613764,
+    "recall_mean": 0.5841621792841305,
+    "roc_auc_mean": 0.878630000772406,
+    "avg_precision_mean": 0.6064258098832941,
+    "train_f1_mean": 0.7284326452432547,
+    "f1_std": 0.019132740082686533,
+    "precision_std": 0.013970661912505887,
+    "recall_std": 0.03686979898960185,
+    "roc_auc_std": 0.013237548410401275,
+    "avg_precision_std": 0.028798873911472747,
+    "train_f1_std": 0.00476364222524407,
+    "best_threshold": 0.4,
+    "f1_at_best_threshold_oof": 0.6452380952380953
+  },
+  "tuned": {
+    "f1_mean": 0.6427851818992354,
+    "precision_mean": 0.6951366749573146,
+    "recall_mean": 0.5988523671450501,
+    "roc_auc_mean": 0.9161911098173132,
+    "avg_precision_mean": 0.7125389913169675,
+    "train_f1_mean": 0.6716519910853123,
+    "f1_std": 0.016796516180843848,
+    "precision_std": 0.015579501507598873,
+    "recall_std": 0.033599776070708055,
+    "roc_auc_std": 0.008080597208758821,
+    "avg_precision_std": 0.015255254650407262,
+    "train_f1_std": 0.005714388269023234,
+    "best_threshold": 0.3225806451612903,
+    "f1_at_best_threshold_oof": 0.6753170156296078
+  },
+  "note": "",
+  "seconds": 4.7
+}
