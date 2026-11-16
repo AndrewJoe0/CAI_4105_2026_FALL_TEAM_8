@@ -1,0 +1,44 @@
+{
+  "model": "Decision Tree",
+  "preprocessing": "tree",
+  "best_params": {
+    "class_weight": null,
+    "max_depth": 5,
+    "min_samples_leaf": 50
+  },
+  "n_grid_combinations": 60,
+  "baseline": {
+    "f1_mean": 0.5768858847188244,
+    "precision_mean": 0.5721016393565291,
+    "recall_mean": 0.5820935162398577,
+    "roc_auc_mean": 0.7511924629010485,
+    "avg_precision_mean": 0.3977084715238294,
+    "train_f1_mean": 1.0,
+    "f1_std": 0.012086709456108648,
+    "precision_std": 0.004485641506686772,
+    "recall_std": 0.023095539089774353,
+    "roc_auc_std": 0.01014051660347024,
+    "avg_precision_std": 0.0107078274421306,
+    "train_f1_std": 0.0,
+    "best_threshold": 1.0,
+    "f1_at_best_threshold_oof": 0.5770696224454451
+  },
+  "tuned": {
+    "f1_mean": 0.6705868367498073,
+    "precision_mean": 0.7099316234567762,
+    "recall_mean": 0.6372700470261445,
+    "roc_auc_mean": 0.9184647524037715,
+    "avg_precision_mean": 0.7031879585823189,
+    "train_f1_mean": 0.6967670142188627,
+    "f1_std": 0.01574227636445315,
+    "precision_std": 0.020575068838917306,
+    "recall_std": 0.04114918415245366,
+    "roc_auc_std": 0.008992238685151527,
+    "avg_precision_std": 0.023023132641942026,
+    "train_f1_std": 0.01062376807946103,
+    "best_threshold": 0.3368421052631579,
+    "f1_at_best_threshold_oof": 0.6824183460736623
+  },
+  "note": "",
+  "seconds": 28.1
+}
